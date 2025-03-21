@@ -51,11 +51,11 @@ defmodule Absinthe.Phoenix.Mixfile do
 
   defp deps do
     [
-      {:absinthe_plug, git: "https://github.com/absinthe-graphql/absinthe_plug", override: true},
-      {:absinthe, "~> 1.7.8"},
+      {:absinthe_plug, "~> 1.5"},
+      {:absinthe, "~> 1.5"},
       {:decimal, "~> 1.0 or ~> 2.0"},
-      {:phoenix, "~> 1.7"},
-      {:phoenix_pubsub, "~> 2.1.3"},
+      {:phoenix, git: "https://github.com/phoenixframework/phoenix"},
+      {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_html, "~> 2.13 or ~> 3.0 or ~> 4.0", optional: true},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:jason, "~> 1.0", only: [:dev, :test]}
